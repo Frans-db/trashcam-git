@@ -1,0 +1,21 @@
+.navbar-toggler .icon-bar {
+    width: 500px !important;
+    height:30px !important;
+  }
+
+.navbar-toggler {
+    margin: 0.5rem;
+}
+
+.nav-item {
+    font-size: 4rem;
+}
+
+.navbar-brand {
+    font-size: 3.5rem;
+    color: greenyellow !important;
+}
+
+.navbar {
+    background-color: rgba(21, 49, 30, 0.1);
+}

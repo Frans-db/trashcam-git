@@ -3,6 +3,10 @@
     margin-top: 2rem;
 }
 
-body {
-    background-color: #e8ffff;
+footer {
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
 }
