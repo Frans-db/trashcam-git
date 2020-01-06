@@ -8,5 +8,10 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 50px;
+    height: 100px;
+}
+
+footer button {
+    width: 10rem;
+    height: 4rem;
 }
