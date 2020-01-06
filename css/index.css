@@ -3,6 +3,11 @@
     margin-top: 2rem;
 }
 
+#label {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
 footer {
     position: fixed; 
     bottom: 0;
