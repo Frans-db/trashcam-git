@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
     <link rel="stylesheet" type="text/css" href="css/navbar.css"/>
+    <link rel="stylesheet" type="text/css" href="css/statistics.css"/>
 </head>
 
 <body>
@@ -12,7 +13,7 @@
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-xs navbar-light">
-    <a class="navbar-brand">Trashcam</a>
+    <a class="navbar-brand"><i class="fas fa-trash fa-1x"></i>  <i class="fas fa-camera fa-1x"></i></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
         <i class="fas fa-bars fa-4x"></i>
     </button>
@@ -34,9 +35,11 @@
 
 <div class="container content">
 <div class="row">
-    <div class="col-md-10 offset-1">
-        <canvas id="myChart" width="400" height="400"></canvas>
-        <canvas id="myChart" width="400" height="400"></canvas>
+    <div class="col-md-10 offset-1 statistics">
+        <canvas id="chartWeekly" width="400" height="400"></canvas>
+    </div>
+    <div class="col-md-10 offset-1 statistics">
+        <canvas id="chartMonthly" width="400" height="400"></canvas>
     </div>
 </div>
 </div>
