@@ -25,7 +25,7 @@ async function init() {
     const metadataURL = URL + "metadata.json";
     model = await tmImage.load(modelURL, metadataURL);
     maxPredictions = model.getTotalClasses();
-    window.requestAnimationFrame(loop);
+    //window.requestAnimationFrame(loop);
 }
 
 async function loop() {
