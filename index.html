@@ -48,28 +48,32 @@
 
       <div class="container-fluid">
         <video id="video" width="640" height="480" autoplay></video>
-        <canvas id="canvas" width="640" height="480"></canvas>
 
 
         <script>
-          var video = document.getElementById('video');
-        
-          // Get access to the camera!
-          if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-              // Not adding `{ audio: true }` since we only want video now
-              navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
-                  //video.src = window.URL.createObjectURL(stream);
-                  video.srcObject = stream;
-                  video.play();
-              });
+          function camera() {
+            
+            var video = document.getElementById('video');
+          
+            // Get access to the camera!
+            //if(navigator.mediaDevices.getUserMedia) {
+            //    alert('Found camera');
+                // Not adding `{ audio: true }` since we only want video now
+                navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
+                    //video.src = window.URL.createObjectURL(stream);
+                    video.srcObject = stream;
+                    video.play();
+                });
+            //}
+          
           }
         </script> 
 
         <div>Teachable Machine Image Model</div>
+          <button type="button" onclick="camera()">Camera</button>
           <button type="button" onclick="init()">Start</button>
           <button type="button" onclick="predict()">Predict</button>
-            <div id="webcam-container"></div>
-              <div id="label-container"></div>
+
 
                 <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
                 <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
@@ -112,8 +116,7 @@
                       }
                   }
                 </script>
-              </div>
-            </div>
+
     <!-- /#page-content-wrapper -->
 
   </div>
