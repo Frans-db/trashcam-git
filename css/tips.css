@@ -3,3 +3,11 @@
     width: 100%;
     background-color: rgba(21, 49, 30, 0.1);
 }
+
+.card-title {
+    font-size: 3.5rem;
+}
+
+.card-text {
+    font-size: 2rem;
+}

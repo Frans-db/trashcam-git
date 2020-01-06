@@ -1,14 +1,16 @@
+var labels = ['Paper', 'PMD', 'Textiles', 'Composts', 'Residual']
+
 var ctx = document.getElementById('chartWeekly').getContext('2d');
-var data = [];
-for (var i = 0; i < 4; i++) {
-    data.push(Math.floor(Math.random() * 25));
+var dataWeekly = [];
+for (var i = 0; i < labels.length; i++) {
+    dataWeekly.push(Math.floor(Math.random() * 25));
 }
 var myChart = new Chart(ctx, {
     type: 'pie',
     data: {
-        labels: ['Paper', 'PMD', 'Textiles', 'Composts', 'Residual'],
+        labels: labels,
         datasets: [{
-            data: data,
+            data: dataWeekly,
             backgroundColor: [
                 'rgba(255, 99, 132, 0.5)',
                 'rgba(54, 162, 235, 0.5)',
@@ -44,16 +46,16 @@ var myChart = new Chart(ctx, {
 });
 
 var ctx = document.getElementById('chartMonthly').getContext('2d');
-var data = [];
-for (var i = 0; i < 4; i++) {
-    data.push(Math.floor(Math.random() * 25));
+var dataMonthly = [];
+for (var i = 0; i < labels.length; i++) {
+    dataMonthly.push(Math.floor(Math.random() * 25)) + dataWeekly[i];
 }
 var myChart = new Chart(ctx, {
     type: 'pie',
     data: {
-        labels: ['Paper', 'PMD', 'Textiles', 'Composts', 'Residual'],
+        labels: labels,
         datasets: [{
-            data: data,
+            data: dataMonthly,
             backgroundColor: [
                 'rgba(255, 99, 132, 0.5)',
                 'rgba(54, 162, 235, 0.5)',
