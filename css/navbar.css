@@ -11,9 +11,8 @@
     font-size: 4rem;
 }
 
-.navbar-brand {
-    font-size: 3.5rem;
-   
+.navbar-brand img {
+    width: 10rem; 
 }
 
 .navbar {
