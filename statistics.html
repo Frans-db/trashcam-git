@@ -5,52 +5,82 @@
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
     <link rel="stylesheet" type="text/css" href="css/navbar.css"/>
     <link rel="stylesheet" type="text/css" href="css/statistics.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Reem Kufi'  rel='stylesheet'>
 </head>
 
 <body>
 <!-- Page Wrapper -->
-<div id="home">
+<div class="statistics">
+<mdb-container class="container-fluid" id="content">
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-xs navbar-light">
-    <a class="navbar-brand"><img src="img/LogoTrashCam.svg"/></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
-        <i class="fas fa-bars fa-4x"></i>
-    </button>
+<mdb-row class="row">
+  <mdb-col class="col">
+    <nav class="navbar navbar-inverse">
+      <mdb-container class="container-fluid" id="cont">
+        <div class="navbar-header" id="navHeader">
+          <a class="navbar-brand" id="logo"><img src="img/LogoTrashCam.svg" id="pic"/></a>
+          <span id="title">TrashCam</span>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" id="toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </mdb-col>
+    </mdb-row>
+    <mdb-row class="row">
+      <mdb-col class="col">
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="nav-item">
+              <div id="items">
+                <a class="nav-link" href="index.html" id="iconName">Home</a>
+                <i class="fas fa-home" id="icon"></i>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div id="items">
+                <a class="nav-link" href="statistics.html" id="iconName">Statistics</a>
+                <i class="fas fa-chart-pie" id="icon"></i>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div id="items">
+                <a class="nav-link" href="tips.html" id="iconName">Tips</a>
+                <i class="far fa-lightbulb" id="icon"></i>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div id="items">
+                <a class="nav-link" href="news.html" id="iconName">News</a>
+                <i class="far fa-newspaper" id="icon"></i>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div id="items">
+                <a class="nav-link" href="help.html" id="iconName">Help</a>
+                <i class="far fa-question-circle" id="icon"></i>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </mdb-container>
+    </nav>
+  </mdb-col>
+</mdb-row>
 
-    <div class="collapse navbar-collapse" id="navbarContent">
-        <ul class="navbar-nav ml-auto text-center">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="statistics.html">Statistics</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="tips.html">Tips</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="news.html">News</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="help.html">Help</a>
-            </li>
-        </ul>    
-    </div>
-</nav>
-
-<div class="container content">
-<div class="row">
-    <div class="col-12 statistics">
-        <canvas id="chartWeekly" width="400" height="400"></canvas>
-    </div>
-    <div class="col-12 statistics">
-        <canvas id="chartMonthly" width="400" height="400"></canvas>
-    </div>
-</div>
-</div>
+<mdb-row class="row" id="mdbRow">
+    <mdb-col class="col" id="mdbCol">
+        <mdb-card class="card">
+          <mdb-card-body>
+        <canvas id="chartWeekly"></canvas>
+        <button type="button"id="timelineButton"><a href="tips.html" id="timelineButton">View timeline</a></button>
+      </mdb-card-body>
+      </mdb-card>
+    </mdb-col>
+</mdb-row >
 
 <!-- Page wrapper end -->
+</mdb-container>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js" integrity="sha256-8zyeSXm+yTvzUN1VgAOinFgaVFEFTyYzWShOy9w7WoQ=" crossorigin="anonymous"></script>
@@ -58,5 +88,19 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+  import {mdbCard, mdbCardBody, mdbCardText, mdbCardTitle} from 'mdbvue';
+  export default {
+       name: 'statistics',
+       components: {
+           mdbCard,
+           mdbCardBody,
+           mdbInput,
+           mdbRow,
+           mdbContainer,
+           mdbCol,
+       }
+}
+</script>
 </body>
 </html>

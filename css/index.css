@@ -1,15 +1,45 @@
 #video {
+    width: auto;
+    margin: 3, 3, 3, 3;
     background-color: black;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
 }
 
 #label {
-    font-size: 3rem;
+    font-size: 30px;
     margin-bottom: 2rem;
 }
 
-footer {
-    position: fixed; 
+.camera {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+
+}
+
+#button {
+    /* width: 20rem;
+    height: 12rem; */
+    border-radius: 30px;
+    font-size: 30px;
+    background-color: rgba(21, 49, 30, 0.1);
+}
+
+#mdbCol1, #mdbCol2, #mdbCol3, #mdbCol4 {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+#mdbRow1, #mdbRow2, #mdbRow3, #mdbRow4 {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+
+/* footer {
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
@@ -22,7 +52,7 @@ footer button {
     border-radius: 30px;
     font-size: 6rem;
     background-color: rgba(21, 49, 30, 0.1);
-}
+} */
 
 .description {
     font-size: 35px;

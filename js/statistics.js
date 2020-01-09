@@ -30,17 +30,21 @@ var myChart = new Chart(ctx, {
     },
     options: {
         legend: {
-            position: 'bottom',
+	    position: 'bottom',
             padding: 20,
             labels: {
-                fontSize: 20
+                fontSize: 20,
+	        fontColor: "white",
+		fontFamily: "Reem Kufi"
             }
         },
         title: {
             display: true,
-            text: 'Trash this week',
+            text: 'Total recycled items: 428',
             padding: 25,
-            fontSize: 25
+            fontSize: 25,
+            fontColor: "white",
+	    fontFamily: "Reem Kufi"
         }
     }
 });

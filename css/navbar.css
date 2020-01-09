@@ -12,9 +12,82 @@
 }
 
 .navbar-brand img {
-    width: 10rem; 
+    width: 10rem;
 }
 
 .navbar {
     background-color: rgba(21, 49, 30, 0.1);
+    margin-bottom: 2rem;
+}
+
+.navbar-brand {
+    font-size: 3.5rem;
+    color: greenyellow !important;
+}
+
+html, body {
+     height: 100%;
+}
+
+.row {
+    justify-content: center;
+    margin: auto;
+
+}
+
+.col {
+     overflow: hidden;
+     justify-content: center;
+     margin: 0;
+     padding: 0;
+}
+
+#title {
+    font-size: 50px;
+    font-family: Reem Kufi;
+    color: white;
+}
+
+#icon {
+    color: white;
+    padding: 2rem;
+    order: 0;
+    font-size: 20px;
+}
+
+#iconName {
+    color: white;
+    font-size: 20px;
+    order: 1;
+    font-family: Reem Kufi;
+}
+
+#items {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#stats{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cont {
+    display: flex;
+    flex-flow: column;
+    padding: 0;
+    margin: 0;
+}
+
+#navHeader {
+  justify-content: space-between;
+  margin: auto;
+}
+
+#logo, #title, #toggle {
+    margin-left: 5rem;
+    margin-right: 5rem;
 }
