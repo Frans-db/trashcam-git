@@ -23,6 +23,7 @@
 .navbar-brand {
     font-size: 3.5rem;
     color: greenyellow !important;
+    
 }
 
 html, body {
@@ -88,13 +89,13 @@ html, body {
 }
 
 #logo, #title {
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-left: 0rem;
+    margin-right: 10rem;
 }
 
 #toggle {
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-left: 4rem;
+    margin-right: 0rem;
     background-color: Transparent;
     background-repeat: no-repeat;
     border: none;
