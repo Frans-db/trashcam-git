@@ -52,12 +52,12 @@ html, body {
     color: white;
     padding: 2rem;
     order: 0;
-    font-size: 20px;
+    font-size: 40px;
 }
 
 #iconName {
     color: white;
-    font-size: 20px;
+    font-size: 40px;
     order: 1;
     font-family: Reem Kufi;
 }
@@ -87,7 +87,24 @@ html, body {
   margin: auto;
 }
 
-#logo, #title, #toggle {
+#logo, #title {
     margin-left: 5rem;
     margin-right: 5rem;
+}
+
+#toggle {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+#scan {
+    border-radius: none;
+    font-size: 45px;
+    color: white;
 }

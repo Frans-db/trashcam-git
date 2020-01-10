@@ -60,6 +60,13 @@ html, body {
 }
 
 
-#timelineButton {
+#timelineButton1, #timelineButton2, #timelineButton3 {
     font-family: Reem Kufi;
+    border-radius: 3px;
+    font-size: 30px;
+    background-color: rgba(21, 49, 30, 0.1);
+}
+
+#timeline, #timeline2, #timeline3 {
+    color: white;
 }
