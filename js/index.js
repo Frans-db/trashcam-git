@@ -31,9 +31,9 @@ async function init() {
 var count = 0;
 
 async function loop() {
-    await predict();
+    window.requestAnimationFrame(loop);
     if (count > 10) {
-        window.requestAnimationFrame(loop);
+        await predict();
         count = 0;
     }
     count++;
