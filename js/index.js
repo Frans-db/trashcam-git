@@ -28,9 +28,15 @@ async function init() {
     window.requestAnimationFrame(loop);
 }
 
+var count = 0;
+
 async function loop() {
     await predict();
-    window.requestAnimationFrame(loop);
+    if (count > 200) {
+        window.requestAnimationFrame(loop);
+        count = 0;
+    }
+    count++;
 }
 
 async function predict() {
