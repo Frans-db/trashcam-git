@@ -33,7 +33,7 @@ var myChart = new Chart(ctx, {
 	    position: 'bottom',
             padding: 20,
             labels: {
-                fontSize: 30,
+                fontSize: 35,
 	        fontColor: "white",
 		fontFamily: "Reem Kufi"
             }
@@ -42,7 +42,7 @@ var myChart = new Chart(ctx, {
             display: true,
             text: "December's total recycled: 234",
             padding: 25,
-            fontSize: 35,
+            fontSize: 40,
             fontColor: "white",
 	    fontFamily: "Reem Kufi"
         }
@@ -82,7 +82,7 @@ var myChart = new Chart(ctx, {
             position: 'bottom',
             padding: 20,
             labels: {
-                fontSize: 30,
+                fontSize: 35,
                 fontColor: "white",
       		fontFamily: "Reem Kufi"
             }
@@ -93,7 +93,7 @@ var myChart = new Chart(ctx, {
             fontColor: "white",
 	          fontFamily: "Reem Kufi",
             padding: 25,
-            fontSize: 35
+            fontSize: 40
         }
     }
 });
