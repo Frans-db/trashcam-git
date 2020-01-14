@@ -32,7 +32,7 @@ var count = 0;
 
 async function loop() {
     window.requestAnimationFrame(loop);
-    if (count > 10) {
+    if (count > 200) {
         await predict();
         count = 0;
     }
