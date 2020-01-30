@@ -15,7 +15,7 @@ var video = document.getElementById('video');
     }
 }
 
-const URL = "https://teachablemachine.withgoogle.com/models/RkBxbHp8/";
+const URL = "https://teachablemachine.withgoogle.com/models/eiI89YI4/";
 
 let model, maxPredictions;
 
