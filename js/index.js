@@ -32,7 +32,7 @@ var count = 0;
 
 async function loop() {
     window.requestAnimationFrame(loop);
-    if (count > 200) {
+    if (count > 20) {
         await predict();
         count = 0;
     }
@@ -52,9 +52,6 @@ async function predict() {
             maxProbability = probability;
             maxProbablilityIndex = i;
         }
-        //const classPrediction =
-        //    prediction[i].className + ": " + prediction[i].probability.toFixed(2);
-        //labelContainer.childNodes[i].innerHTML = classPrediction;
     }
     label.innerHTML = prediction[maxProbablilityIndex].className;
 }
